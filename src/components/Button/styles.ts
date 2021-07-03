@@ -23,6 +23,7 @@ const wrapperModifiers = {
   `,
   fullWidth: () => css`
     width: 100%;
+    height: auto;
   `,
   withIcon: (theme: DefaultTheme) => css`
     display: inline-flex;
