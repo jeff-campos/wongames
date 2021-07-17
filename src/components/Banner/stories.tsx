@@ -7,6 +7,18 @@ export default {
   argTypes: {
     ribbon: {
       type: 'string'
+    },
+    ribbonSize: {
+      control: {
+        type: 'select',
+        options: ['normal', 'small']
+      }
+    },
+    ribbonColor: {
+      control: {
+        type: 'select',
+        options: ['primary', 'secondary']
+      }
     }
   },
   args: {
