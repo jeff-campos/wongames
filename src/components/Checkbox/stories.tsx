@@ -2,16 +2,20 @@ import { Story, Meta } from '@storybook/react/types-6-0'
 import Checkbox, { CheckboxProps } from '.'
 
 export default {
-  title: 'Checkbox',
+  title: 'Form/Checkbox',
   component: Checkbox,
   parameters: {
-    layout: 'fullscreen',
-    backgrounds: {
-      default: 'dark'
-    }
+    layout: 'fullscreen'
+  },
+  args: {
+    labelColor: 'black'
   },
   argTypes: {
-    onCheck: { action: 'checked' }
+    onCheck: { action: 'checked' },
+    labelColor: {
+      type: 'select',
+      options: ['black', 'white']
+    }
   }
 } as Meta
 
