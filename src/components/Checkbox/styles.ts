@@ -29,7 +29,7 @@ export const Input = styled.input`
       border-left: 0;
       transform: rotate(45deg);
       position: absolute;
-      top: 0.1rem;
+      top: -0.1rem;
       opacity: 0;
       transition: ${theme.transition.fast};
     }
