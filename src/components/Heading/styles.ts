@@ -23,6 +23,10 @@ const wrapperModifiers = {
     border-left: 0.7rem solid ${theme.colors[lineColor]};
   `,
 
+  huge: (theme: DefaultTheme) => css`
+    font-size: ${theme.font.sizes.huge};
+  `,
+
   lineBottom: (theme: DefaultTheme, lineColor: LineColors) => css`
     position: relative;
     margin-bottom: ${theme.spacings.medium};
