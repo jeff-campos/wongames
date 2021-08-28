@@ -1,17 +1,17 @@
 import { renderWithTheme } from 'utils/tests/helpers'
 
-import { FormWrapper, FormLink, ForgotPassword } from '.'
+import { FormLink, FormWrapper } from '.'
 
 describe('<Form />', () => {
-  it('should render the Form', () => {
+  it('should render the heading', () => {
     const { container } = renderWithTheme(
       <FormWrapper>
         <FormLink>
           My nice <a href="#">link</a>
         </FormLink>
-        <ForgotPassword>click me</ForgotPassword>
       </FormWrapper>
     )
+
     expect(container.parentElement).toMatchInlineSnapshot(`
 .c0 .sc-jSFjdj {
   margin: 0.8rem 0;
@@ -41,19 +41,6 @@ describe('<Form />', () => {
   border-bottom: 0.1rem solid #29b3a3;
 }
 
-.c2 {
-  display: block;
-  font-size: 1.4rem;
-  color: #030517;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  text-align: right;
-}
-
-.c2:hover {
-  color: #0f1971;
-}
-
 <body>
   <div>
     <div
@@ -69,11 +56,6 @@ describe('<Form />', () => {
           link
         </a>
       </div>
-      <a
-        class="c2"
-      >
-        click me
-      </a>
     </div>
   </div>
 </body>
