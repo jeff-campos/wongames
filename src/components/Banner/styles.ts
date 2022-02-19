@@ -68,6 +68,7 @@ export const Subtitle = styled.h3`
     font-size: ${theme.font.sizes.small};
     font-weight: ${theme.font.normal};
     margin-bottom: ${theme.spacings.xsmall};
+    margin-top: 0px;
     strong {
       color: ${theme.colors.primary};
       font-weight: ${theme.font.bold};
