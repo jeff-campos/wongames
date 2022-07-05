@@ -3,6 +3,9 @@ import media from 'styled-media-query'
 import { Container } from 'components/Container'
 
 export const Main = styled(Container)`
+  p {
+    color: #fff;
+  }
   ${({ theme }) => css`
     ${media.greaterThan('medium')`
     display: grid;
