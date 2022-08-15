@@ -7,8 +7,7 @@ export default {
   title: 'ExploreSidebar',
   component: ExploreSidebar,
   args: {
-    items,
-    onFilter: () => console.log('filter')
+    items
   },
   parameters: {
     layout: 'fullscreen',
@@ -28,10 +27,7 @@ export const WithInitialValues: Story<ExploreSidebarProps> = (args) => (
   <div style={{ padding: 16, maxWidth: 320 }}>
     <ExploreSidebar
       {...args}
-      initialValues={{
-        platforms: ['windows', 'linux'],
-        sort_by: 'low-to-high'
-      }}
+      initialValues={{ windows: true, sort_by: 'low-to-high' }}
     />
   </div>
 )
