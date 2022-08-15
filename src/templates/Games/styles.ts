@@ -3,9 +3,6 @@ import media from 'styled-media-query'
 import { Container } from 'components/Container'
 
 export const Main = styled(Container)`
-  p {
-    color: #fff;
-  }
   ${({ theme }) => css`
     ${media.greaterThan('medium')`
     display: grid;
@@ -16,15 +13,24 @@ export const Main = styled(Container)`
 `
 
 export const ShowMore = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+`
+
+export const ShowMoreButton = styled.div`
   ${({ theme }) => css`
-    color: ${theme.colors.white};
     text-align: center;
-    padding: ${theme.spacings.medium};
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
+    color: ${theme.colors.white};
     > svg {
       color: ${theme.colors.primary};
     }
   `}
+`
+export const ShowMoreLoading = styled.img`
+  width: 4rem;
 `
