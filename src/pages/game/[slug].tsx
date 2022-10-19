@@ -12,7 +12,7 @@ import {
 import { GetStaticProps } from 'next'
 import { QueryRecommended } from 'graphql/generated/QueryRecommended'
 import { QUERY_RECOMMENDED } from 'graphql/queries/recommended'
-import { gamesMapper, highlightMapper } from 'utils/mappers'
+import { gamesMapper, highlightMapper } from 'utils/mappers/'
 import {
   QueryUpcoming,
   QueryUpcomingVariables
@@ -79,6 +79,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       revalidate: 60,
       cover: `http://localhost:1337${game.cover?.src}`,
       gameInfo: {
+        id: game.id,
         title: game.name,
         price: game.price,
         description: game.short_description
