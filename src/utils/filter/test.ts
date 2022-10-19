@@ -15,7 +15,7 @@ const queryString = {
 }
 
 describe('parseQueryStringToWhere()', () => {
-  it.only('should parse queryString to where format', () => {
+  it('should parse queryString to where format', () => {
     const parsedQuery = parseQueryStringToWhere({ queryString, filterItems })
 
     expect(parsedQuery).toStrictEqual({
@@ -27,7 +27,7 @@ describe('parseQueryStringToWhere()', () => {
 })
 
 describe('parseQueryStringToFilter()', () => {
-  it.only('should parse queryString to filter values format', () => {
+  it('should parse queryString to filter values format', () => {
     const parsedQuery = parseQueryStringToFilter({ queryString, filterItems })
 
     expect(parsedQuery).toStrictEqual({

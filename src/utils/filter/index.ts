@@ -12,6 +12,7 @@ export const parseQueryStringToWhere = ({
 }: ParseArgs) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const obj: any = {}
+
   Object.keys(queryString)
     .filter((item) => item !== 'sort')
     .forEach((key) => {
